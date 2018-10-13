@@ -1,0 +1,371 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Seaweed+Script');
+/* CSS Document */
+/*
+Developer: Shanda Biggs
+Table of Contents
+HEADER - Pink Floyd, logo, main menu, search bar
+MAINCONTENT - Carousel Band, Music, Tour, Form 
+FOOTER – Social links, sources, Copyright
+Color Palette
+MEDIA QUIERIES----
+Color Pallete 
+#777   -- pale grey
+#969595 -- soft grey 
+#323233 -- charcoal grey
+#2d2d30 -- blackish grey
+#171515 -- soft black
+#29292c -- dark grey
+#003399 -- bright royal blue
+#bdbdbd -- off white
+#F731EF -- bright purple
+#FC1B1F -- orange red
+----------*/
+
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: #777;
+}
+h1, h2 {
+	font: 400 80px/1.3 'Oleo Script', Helvetica, sans-serif;
+	color: #969595;
+	text-shadow: 0px 3px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px #2b2b2b, 3px 8px 15px rgba(0,0,0,0.1), 3px 8px 5px rgba(0,0,0,0.3);
+}
+h3, h4 {
+	margin: 10px 0 30px 0;
+	letter-spacing: 10px;
+	font-size: 20px;
+	color: #111;
+}
+h4 {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	color: #FF1111;
+}
+.container {
+	padding: 80px 120px;
+	background: #171515;
+}
+#bandpage {
+	color: #fff !important;
+	background-color: #29292c !important;
+}
+.fa-angle-up {
+	color: #f5f5f5;
+}
+/*-----------------'Navbar----------------------*/
+.bigBrand {
+	font-size: 2em;
+	color: #FF1111;
+}
+.menulogo {
+	width: 40%;
+	border: thin #F731EF;
+}
+.navbar {
+	opacity: 0.8;
+	margin-bottom: 0;
+	border: 0;
+}
+#myNav {
+	z-index: 100;
+}
+#search {
+	margin: auto;
+}
+.nav-tabs li a {
+	color: #777;
+}
+.navbar {
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0;
+	background-color: #2d2d30;
+	border: 0;
+	font-size: 11px !important;
+	letter-spacing: 4px;
+	opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand {
+	color: #d5d5d5 !important;
+}
+.navbar-nav li a:hover {
+	color: #F731EF !important;
+}
+.navbar-nav li.active a {
+	color: #fff !important;
+	background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+/*-----------------'Navbar End-----------------*/
+
+/*----------'carousel------------------*/
+#myCarousel {
+	margin-top: 2%;
+}
+.carousel-inner img {
+	filter: grayscale(70%);
+	width: 100%;
+	max-height: 650px;
+	margin: auto;
+}
+.carousel-caption h3 {
+	color: #fff !important;
+}
+.carousel img {
+	max-width: 100%;
+	height: auto;
+}
+.pig {
+	z-index: -2;
+}
+/*------------'carousel end--------------*/
+/*---'the band----*/
+h1 .band {
+	margin: 40px 0 60px 0;
+	font-weight: 300;
+}
+.our-team-main {
+	width: 100%;
+	height: auto;
+	border-bottom: 5px #323233 solid;
+	background: #000;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.5s;
+	margin-bottom: 28px;
+}
+.our-team-main img {
+	border-radius: 50%;
+	margin-bottom: 20px;
+	width: 90px;
+}
+.our-team-main h3 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.our-team-main p {
+	margin-bottom: 0;
+}
+.team-back {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px 15px 0 15px;
+	text-align: left;
+	background: #FC1B1F;
+}
+.team-front {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 10;
+	background: #fff;
+	padding: 15px;
+	bottom: 0px;
+	transition: all 0.5s ease;
+	background-color: red;
+	background-image: radial-gradient(  circle closest-side,  red,  #333  );
+}
+.our-team-main:hover .team-front {
+	bottom: -200px;
+	transition: all 0.5s ease;
+}
+.our-team-main:hover {
+	border-color: #777;
+	transition: 0.5s;
+}
+.summary p {
+	padding: 5%;
+	padding-bottom: 10%;
+}
+/*--------'music-------*/
+.bg-1 {
+	width: 98%;
+	background: #2d2d30;
+	color: #bdbdbd;
+	padding: 5%;
+}
+.bg-1 h3 {
+	color: #fff;
+}
+.bg-1 p {
+	font-style: italic;
+}
+.list-group-item:first-child {
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+.list-group-item:last-child {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.btn {
+	padding: 10px 20px;
+	background: linear-gradient(  #F731EF,  #333);
+	color: #f5f5f5;
+	transition: .2s;
+}
+.btn:hover, .btn:focus {
+	border: 1px solid #333;
+	background: url(../images/vortex.jpg);
+	color: #ED2176;
+}
+/*------'form------------*/
+.myform {
+	background: linear-gradient(#F731EF, #333);
+	border: thick #333;
+	color: #fff;
+	padding: 4%;
+}
+/*----------footer------*/
+footer {
+	background-color: #2d2d30;
+	color: #f5f5f5;
+	padding: 32px;
+}
+footer a {
+	color: #f5f5f5;
+}
+footer a:hover {
+	color: #F731EF;
+	text-decoration: none;
+}
+.form-control {
+	border-radius: 0;
+}
+textarea {
+	resize: none;
+}
+.label-danger {
+	font-size: 10px;
+	color: #fff;
+	background: red;
+	border-radius: 12%;
+	padding: 1px;
+}
+.ticket {
+	background: #fff;
+	padding: 5px;
+}
+.col-sm-4 {
+	border: #333;
+}
+.mybtn {
+	margin: 2%;
+	float: right;
+	background: linear-gradient(#333, #fff);
+	border: thin #FA1BE4;
+	color: #000;
+	padding: 5%;
+}
+.glyphicon .glyphicon-menu-up {
+	color: #fff;
+}
+.splitimg {
+	margin-top: -3%;
+	position: absolute;
+	z-index: 2;
+}
+.social {
+	list-style: none;
+}
+.list-inline-item {
+	margin: 2%;
+}
+.mytour {
+	color: #FF1111;
+	font-size: 3em;
+	text-shadow: 4px 4px 0px rgba(0,0,0,0.9);
+}
+.modal-body {
+	color: #003399;
+	background: #7B7DAC;
+}
+.card {
+	margin-top: 2%;
+}
+.card-title {
+	color: #ED2176;
+}
+/*-----------------------albums---------------------------*/
+#albumpage {
+	color: #003399;
+	background-color: #29292c !important;
+}
+.albums {
+	margin-top: 12%;
+}
+.person {
+	border: 10px solid transparent;
+	margin-bottom: 25px;
+	width: 80%;
+	height: 80%;
+	opacity: 0.7;
+}
+.person:hover {
+	border-color: #f1f1f1;
+}
+.album {
+	margin-bottom: 5%;
+	border: thick #7B7DAC;
+}
+
+/*--------------------albums end----------------------*/
+/*-----------------------------media qeuries-----------------------*/
+@media only screen and (max-width: 1000px) {
+	#bandpage nav{
+		margin-bottom: 12%;
+	}
+	.bigBrand{
+		font-size: 1.5em;
+	}
+.container {
+	padding: 10px 20px;
+}
+	.card-deck{
+		padding: 10px;
+	}
+.card {
+	min-width: 50%;
+}
+.img-fluid .card {
+	min-width: 50%;
+	min-height: 50%;
+}
+}
+@media only screen and (max-width: 650px){
+	#myCarousel{
+		margin-top: 20%;
+	}
+	.albums{
+		margin-top: 25%;
+	}
+	.card-deck{
+		padding:10%;
+	}
+}
+.preview-card .text-up{
+   position: absolute;
+   top: -20px;
+   left: -30px;
+}
+.preview-card .text{
+   font-family: 'Seaweed Script';
+   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+   color: #FFF;
+   font-size: 2.5em;
+   transform: rotate(-20deg);
+   
+}
+.preview-card .text-bottom{
+
+   position: absolute;
+   top: 10px;
+   left: -10px;
+   
+}
