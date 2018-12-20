@@ -1,3 +1,5 @@
+<?php require_once('./../Admin/initialize.php'); ?>
+<?php include __DIR__ . './../Includes/title.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,15 +12,13 @@
 <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
 </head>
 <body id="bandpage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
 <div class="container-fluid">
-  <?php require './includes/nav.php'; ?>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success btn-sm my-2 my-sm-0" id="search" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+  <?php require (INCLUDES_PATH .'/nav.php'); ?>
+      
+  </div>
 </div>
+
 <!--container-fluid-->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -39,7 +39,8 @@
   <!--carousel-inner-->
   <!--#myCarousel carousel slide-->
   <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
+</div>
 <!--carousel-inner-->
 <div class="splitimg img-fluid"><img src="images/greypig.jpg" alt="logo" class="pig img-fluid" width="90"></div>
 <!--the band-->
@@ -68,7 +69,7 @@
     </div>
     <!--col-lg-4-->
     <div class="col-lg-4">
-      <div class="our-team-main">
+      <div class="our-team-main" name="band">
         <div class="team-front"> <img src="images/gilmour.jpg" class="img-fluid" alt="David Gilmore">
           <h3>David <br>
             Gilmour</h3>
@@ -178,7 +179,7 @@
 </div>
 <!--#news container-fluid-->
 <!--Tour/Events-->
-<div class="bg-1">
+<div class="bg-1" name="tour">
   <div class="container-fluid" id="tour">
     <h2 class="text-center">TOUR DATES</h2>
     <p class="text-center small">Upcoming Events and Performances<br>
@@ -230,164 +231,11 @@
   <!--container #tour-->
 </div>
 <!--bg-1-->
-<div id="up" class="text-center container-fluid">
-  <p><a class="fas fa-angle-up fa-3x" href="#bandpage" data-toggle="tooltip" title="TOP"></a></p>
-</div>
+
 <!--#news container-fluid-->
-<div class="container myform" id="contact">
-  <h3 class="text-center">JOIN OUR FANCLUB</h3>
-  <div class="row test">
-    <div class="col-md-4 align-content-center">
-      <p class="text-center"><em>SEND US A MESSAGE</em></p>
-      <p><span><i class="far fa-envelope-open"> pinkfloyd_fanclub@yahoo.com</i></span></p>
-    </div>
-    <!--col-md-4 align-content-center-->
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 input-group"> <span class="input-group-addon"> <i class="fas fa-user fa-fw fa-2x"></i></span>
-          <input class="form-control" id="name" name="name" placeholder="First Name*" type="text" required>
-        </div>
-        <!--col-sm-6 form-group-->
-        <div class="col-sm-6 input-group"> <span class="input-group-addon"> <i class="fas fa-user fa-fw fa-2x"></i></span>
-          <input class="form-control" id="lastname" name="name" placeholder="Last Name*" type="text" required>
-        </div>
-        <!--col-sm-6 input-group-->
-      </div>
-      <br>
-      <!--row-->
-      <div class="row">
-        <div class="col-sm-6 input-group"> <span class="input-group-addon"> <i class="fas fa-envelope fa-fw fa-2x"></i></span>
-          <input class="form-control" id="email" name="email" placeholder="Email*" type="email" required>
-        </div>
-        <!--col-sm-6 input-group-->
-        <div class="col-sm-6 input-group"> <span class="input-group-addon"> <i class="fas fa-home fa-fw fa-2x"></i></span>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <!--col-sm-6 input-group-->
-      </div>
-      <br>
-      <!--row-->
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option value="">State</option>
-            <option value="AL">Alabama</option>
-            <option value="AK">Alaska</option>
-            <option value="AZ">Arizona</option>
-            <option value="AR">Arkansas</option>
-            <option value="CA">California</option>
-            <option value="CO">Colorado</option>
-            <option value="CT">Connecticut</option>
-            <option value="DE">Delaware</option>
-            <option value="FL">Florida</option>
-            <option value="GA">Georgia</option>
-            <option value="HI">Hawaii</option>
-            <option value="ID">Idaho</option>
-            <option value="IL">Illinois</option>
-            <option value="IN">Indiana</option>
-            <option value="IA">Iowa</option>
-            <option value="KS">Kansas</option>
-            <option value="KY">Kentucky</option>
-            <option value="LA">Louisiana</option>
-            <option value="ME">Maine</option>
-            <option value="MD">Maryland</option>
-            <option value="MA">Massachusetts</option>
-            <option value="MI">Michigan</option>
-            <option value="MN">Minnesota</option>
-            <option value="MS">Mississippi</option>
-            <option value="MO">Missouri</option>
-            <option value="MT">Montana</option>
-            <option value="NE">Nebraska</option>
-            <option value="NV">Nevada</option>
-            <option value="NH">New Hampshire</option>
-            <option value="NJ">New Jersey</option>
-            <option value="NM">New Mexico</option>
-            <option value="NY">New York</option>
-            <option value="NC">North Carolina</option>
-            <option value="ND">North Dakota</option>
-            <option value="OH">Ohio</option>
-            <option value="OK">Oklahoma</option>
-            <option value="OR">Oregon</option>
-            <option value="PA">Pennsylvania</option>
-            <option value="RI">Rhode Island</option>
-            <option value="SC">South Carolina</option>
-            <option value="SD">South Dakota</option>
-            <option value="TN">Tennessee</option>
-            <option value="TX">Texas</option>
-            <option value="UT">Utah</option>
-            <option value="VA">Vermont</option>
-            <option value="VT">Virginia</option>
-            <option value="WA">Washington</option>
-            <option value="WV">West Virginia</option>
-            <option value="WI">Wisconsin</option>
-            <option value="WY">Wyoming</option>
-          </select>
-        </div><!--form-group col-md-4-->
-        <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div><!--form-group col-md-2-->
-      </div>
-      <div class="row"> </div>
-      <br>
-      <!--row-->
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <div class="form-check-inline">
-        <label class="form-check-label" for="check1">
-          <input type="checkbox" class="form-check-input" id="check1" name="Plain Text" value="something" checked>
-          Plain Text </label>
-      </div>
-      <div class="form-check-inline">
-        <label class="form-check-label" for="check2">
-          <input type="checkbox" class="form-check-input" id="check2" name="HTML" value="something">
-          HTML </label>
-      </div>
-      <!--form-check-inline-->
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <input type="checkbox" checked="checked" name="subscribe">
-          <label> Weekly Newsletter </label>
-          <br>
-          <input type="checkbox" checked="checked" name="join">
-          <label> Join the Fanclub </label>
-          <button class="btn align-right mybtn" data-toggle="modal" data-target="#formModal" type="submit">Subscribe</button>
-        </div>
-  <!-- Modal -->
-  <div class="modal fade" id="formModal" role="dialog">
-    <div class="modal-dialog text-center">
-      <!-- Modal content-->
-      <div class="modal-content bg-dark">
-        <div class="modal-header">
-          <h4 class="modal-title">All Done</h4>
-        </div>
-        <div class="modal-body">
-          <p>Thank you for joining our fanclub!</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn align-right mybtn" data-dismiss="modal">Close</button>
-        </div>
-      </div>
 
-    </div>
-  </div>
-
-
-        <!--col-md-12 form-group-->
-      </div>
-      <!--row-->
-    </div>
-    <!--col-md-8-->
-  </div>
-  <!--row test-->
-</div>
-<!--container myform #contact-->
-<?php include './includes/footer.php'; ?>
+<footer class="text-center container-fluid"><a class="fas fa-angle-up fa-3x" href="#up" data-toggle="tooltip" title="TOP"></a></footer>
+<?php include (INCLUDES_PATH .'/footer.php'); ?>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.0.0.js"></script>

@@ -1,4 +1,4 @@
-<footer class="text-center container-fluid"> <a class="fas fa-angle-up fa-3x" href="#up" data-toggle="tooltip" title="TOP"></a>
+<footer class="text-center container-fluid">
   <div class="social">
     <ul class="list-inline social">
       <li class="list-inline-item"><a href="http://feeds.feedburner.com/brain-damage-news" class="fas fa-rss-square fa-3x"></a></li>
@@ -16,6 +16,7 @@
       </li>
       <li>This site was created for educational purposes.</li>
       <li>&copy;ShandaBiggs</li>
+      <li>&copy;JimmyKennedy</li>
     </ul>
   </div>
   <!--container-->
@@ -35,7 +36,7 @@
         <!-- Modal body -->
         <div class="modal-body">
           <ul class="text-center">
-            <li><a href="http://www.pinkfloyd.com/">Pink Floyd's official website</a></li>
+            <li><a href="http://www.pinkfloyd.com/">Pink Floyds official website</a></li>
             <li><a href="https://en.m.wikipedia.org/wiki/Pink_Floyd">Wikipedia</a></li>
           </ul>
         </div>
@@ -52,3 +53,4 @@
   </div>
   <!--model fade myModel-->
 </footer>
+<?php dbdisconnect($conn); ?>
